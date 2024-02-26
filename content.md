@@ -126,3 +126,15 @@ Careers
 Recipe directory
 Help center
 Privacy & terms
+
+## sections
+
+- 1. Logo + Navigation
+- 2. Hero
+- 3. Featured in (partners for +++ trust)
+- 4. How it works (steps)
+- 5. Diet + Meals
+- 6. Testimonials + Gallery
+- 7. Pricing plans + Features
+- 8. CTA (call-to-action: sign up form)
+- 9. Footer
