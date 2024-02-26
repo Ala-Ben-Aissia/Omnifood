@@ -35,9 +35,32 @@
   box-sizing: border-box;
 }
 
+html {
+  /* font-size: 10px; */
+  /* now: 1rem => 10px */
+  /* 
+    but this may cause a huge usability problem when user changes his
+    browser's default font size (16px)
+  */
+  font-size: 62.5%;
+  /* 10px / 16px = 0.625 = 62.5% (of the current browser font size)  */
+  /* +++ Responsiveness */
+}
+
 body {
   font-family: sans-serif;
   font-weight: 400;
   line-height: 1;
   color: #333;
+}
+
+.test {
+  max-width: 1000px;
+  /* 
+  if the container width is greater than the specified max-width
+  then the width of the element will be equal to the max-width
+  else the element's width will be equal to 100% of the container's width
+  */
+  background-color: red;
+  padding: 6.4rem;
 }
