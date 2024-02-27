@@ -10,11 +10,12 @@
       default: 1
 
   * COLORS
+    - https://maketintsandshades.com
     - Primary: #e67e22
-    - Tints:
-    - Shades:
+    - Tints: #fdf2e9
+    - Shades: #cf711f
     - Accents:
-    - Greys: #333 
+    - Greys: #555, #333
 
   * IMAGES:
     - https://unsplash.com
@@ -43,6 +44,7 @@ html {
     browser's default font size (16px)
   */
   font-size: 62.5%;
+  /* 1rem => 10px */
   /* 10px / 16px = 0.625 = 62.5% (of the current browser font size)  */
   /* +++ Responsiveness */
 }
@@ -50,17 +52,115 @@ html {
 body {
   font-family: sans-serif;
   font-weight: 400;
+  font-family: "Rubik", sans-serif;
   line-height: 1;
-  color: #333;
+  color: #555;
 }
 
-.test {
-  max-width: 1000px;
-  /* 
-  if the container width is greater than the specified max-width
-  then the width of the element will be equal to the max-width
-  else the element's width will be equal to 100% of the container's width
-  */
-  background-color: red;
-  padding: 6.4rem;
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+
+.hero {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 700;
+  line-height: 1.05;
+  color: #333;
+  letter-spacing: -0.5px;
+  margin-bottom: 3.2rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 9px;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+  /* Put transition on original "state" */
+  transition: background-color 0.3s;
+}
+
+.btn--cta:link,
+.btn--cta:visited {
+  background-color: #e67e22;
+}
+
+.btn--cta:hover,
+.btn--cta:active {
+  background-color: #cf711f;
+}
+
+.btn--info:link,
+.btn--info:visited {
+  color: #555;
+  background-color: #fff;
+}
+
+.btn--info:hover,
+.btn--info:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+  /* trick to add border inside */
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.6rem;
+}
+
+.delivered-imgs {
+  display: flex;
+}
+
+.delivered-imgs img {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 50%;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+
+.delivered-imgs img:last-child {
+  margin-right: 0;
+}
+
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.delivered-text span {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #cf711f;
 }
