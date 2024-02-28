@@ -5,10 +5,14 @@
 
     - FONT WEIGHTS (px)
       default: 400
+      Medium: 500
+      Semi-bold: 600
+      Bold: 700
 
     - LINE HEIGHTS (px)
-      default: 1
-
+      default 1
+      small 1.05
+      paragraph default 1.6
   * COLORS
     - https://maketintsandshades.com
     - Primary: #e67e22
@@ -24,7 +28,7 @@
   * SHADOWS
 
   * BORDER_RADIUS
-  
+    default: 9px
   * WHITESPACE
     - SPACING (px)
       2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -57,9 +61,83 @@ body {
   color: #555;
 }
 
+/* ^ GENERAL REUSABLE COMPONENT */
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 9.6rem;
+}
+
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* ^ HEADER */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 9.6rem;
+  padding: 0 4.8rem;
+  background-color: #fdf2e9;
+}
+
+.logo {
+  height: 2.2rem;
+}
+
+/* header have a fix height to be sticky later */
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.main-nav-cta:link,
+.main-nav-link.main-nav-cta:visited {
+  color: #fff;
+  background-color: #e67e22;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+}
+
+.main-nav-link.main-nav-cta:hover,
+.main-nav-link.main-nav-cta:active {
+  background-color: #cf711f;
+}
+
+/* ^ SECTION HERO */
+
 .section-hero {
   background-color: #fdf2e9;
-  padding: 9.6rem 0;
+  padding: 4.8rem 0;
 }
 
 .hero {
@@ -163,4 +241,18 @@ body {
   font-size: 1.8rem;
   font-weight: 700;
   color: #cf711f;
+}
+
+/* ^ HOW IT WORKS SECTION */
+
+.section-how {
+  background-color: #333;
+  padding: 9.6rem 0;
+}
+
+.section-how div div {
+  font-size: 4.8rem;
+  text-align: center;
+  padding: 9.6rem;
+  background-color: #cf711f;
 }
