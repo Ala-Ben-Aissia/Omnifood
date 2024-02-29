@@ -84,7 +84,7 @@
   border-radius: 9px;
   padding: 1.6rem 3.2rem;
   display: inline-block;
-  transition: background-color 0.3s;
+  transition: all 0.3s;
 }
 
 .btn--cta:link,
