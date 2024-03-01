@@ -343,25 +343,6 @@ strong {
   font-weight: 500;
 }
 
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  font-size: 3rem;
-  color: #e67e22;
-}
-
 .margin-bottom-md {
   margin-bottom: 4.8rem;
 }
@@ -409,7 +390,7 @@ strong {
 
 .testimonial {
   display: grid;
-  grid-template-rows: 1fr 2fr auto;
+  grid-template-rows: auto 1fr auto;
 }
 
 .testimonial img {
@@ -449,4 +430,91 @@ strong {
 
 .gallery figure {
   overflow: hidden;
+}
+
+/* 
+ ? ****************
+  ^ PRICING SECTION
+ ? ****************
+*/
+
+.section-pricing {
+  padding: 9.6rem 0;
+}
+
+.pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+  padding: 4.8rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.plan--starter {
+  justify-self: end;
+  /* border: 2px solid #fdf2e9; */
+  box-shadow: inset 0 0 0 2px #fdf2e9;
+}
+
+.plan--complete {
+  background-color: #fdf2e9;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan--complete::after {
+  content: "BEST VALUE";
+  background-color: #ffd43b;
+  text-align: center;
+  /* transform: rotate(45deg); */
+  rotate: 45deg;
+  position: absolute;
+  top: 6%;
+  right: -10%;
+  font-size: 1.4rem;
+  padding: 0.8rem 4.8rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 4.8rem;
+}
+
+.plan-name {
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  /* letter-spacing: 0.5px; */
+  color: #cf711f;
+  margin-bottom: 3.2rem;
+}
+
+.plan-price {
+  font-size: 6.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1.4rem;
+}
+
+.plan-price:last-child {
+  color: #eee;
+}
+
+.plan-price span {
+  font-size: 3rem;
+  font-weight: 500;
+  margin-right: .8rem;
+}
+
+.plan-text {
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: #6f6f6f;
+}
+
+.plan-cta {
+  text-align: center;
+  margin-top: 4.8rem;
 }
