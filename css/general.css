@@ -157,3 +157,21 @@ body {
   font-size: 3rem;
   color: #e67e22;
 }
+
+/* HELPER/SETTINGS CLASSES */
+
+strong {
+  font-weight: 500;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+
+.center-text {
+  text-align: center;
+}
