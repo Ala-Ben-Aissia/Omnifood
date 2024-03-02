@@ -18,7 +18,7 @@
   * COLORS
     - https://maketintsandshades.com
     - Primary: #e67e22
-    - Tints: #fdf2e9 #fae5d3
+    - Tints: #fdf2e9 #fae5d3 #eb984e
     - Shades: #cf711f
     - Accents:
     - Greys: #555, #333
@@ -61,6 +61,13 @@ body {
   ^ GENERAL REUSABLE COMPONENT
  ? ****************
 */
+
+*:focus {
+  outline: none;
+  /* outline: 4px solid #fff;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
 
 .container {
   max-width: 120rem;
@@ -139,6 +146,7 @@ body {
   /* without display: block margin-bottom does not work */
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -149,6 +157,9 @@ body {
   padding: 1.6rem 3.2rem;
   display: inline-block;
   transition: all 0.3s;
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
 }
 
 .btn--cta:link,
