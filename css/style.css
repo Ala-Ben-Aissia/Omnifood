@@ -1,4 +1,8 @@
-/* ^ HEADER */
+/* 
+ ? ****************
+  ^ HEADER SECTION
+ ? ****************
+*/
 
 .header {
   display: flex;
@@ -74,42 +78,6 @@
   line-height: 1.6;
   margin-bottom: 4.8rem;
 }
-
-.btn:link,
-.btn:visited {
-  font-size: 2rem;
-  font-weight: 600;
-  text-decoration: none;
-  color: #fff;
-  border-radius: 9px;
-  padding: 1.6rem 3.2rem;
-  display: inline-block;
-  transition: all 0.3s;
-}
-
-.btn--cta:link,
-.btn--cta:visited {
-  background-color: #e67e22;
-}
-
-.btn--cta:hover,
-.btn--cta:active {
-  background-color: #cf711f;
-}
-
-.btn--info:link,
-.btn--info:visited {
-  color: #555;
-  background-color: #fff;
-}
-
-.btn--info:hover,
-.btn--info:active {
-  background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
-}
-
-
 
 .hero-img {
   width: 100%;
@@ -190,12 +158,6 @@
   padding: 9.6rem 0;
 }
 
-/* .step-text-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
-
 .step-number {
   font-size: 8.6rem;
   font-weight: 600;
@@ -210,7 +172,6 @@
 
 .step-img {
   width: 35%;
-  /* z-index: 1 */
 }
 
 .step-img-box {
@@ -233,10 +194,6 @@
 
 .step-img-box::before {
   width: 60%;
-  /* height: 60%; doesn't work*/
-  /* OR padding-bottom: 60%; */
-  /* +vertical padding => +height */
-  /* 60% of the parent element */
   background-color: #fdf2e9;
   z-index: -2;
 }
@@ -332,8 +289,6 @@
   align-items: center;
   gap: 1.6rem;
 }
-
-
 
 .link:link,
 .link:visited {

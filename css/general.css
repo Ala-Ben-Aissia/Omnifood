@@ -139,6 +139,40 @@ body {
   /* without display: block margin-bottom does not work */
 }
 
+.btn:link,
+.btn:visited {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 9px;
+  padding: 1.6rem 3.2rem;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn--cta:link,
+.btn--cta:visited {
+  background-color: #e67e22;
+}
+
+.btn--cta:hover,
+.btn--cta:active {
+  background-color: #cf711f;
+}
+
+.btn--info:link,
+.btn--info:visited {
+  color: #555;
+  background-color: #fff;
+}
+
+.btn--info:hover,
+.btn--info:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+
 .list {
   list-style: none;
   display: flex;
