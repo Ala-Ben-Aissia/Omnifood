@@ -407,7 +407,6 @@
   content: "BEST VALUE";
   background-color: #ffd43b;
   text-align: center;
-  /* transform: rotate(45deg); */
   rotate: 45deg;
   position: absolute;
   top: 6%;
@@ -494,8 +493,6 @@
 }
 
 .section-cta {
-  /* padding: 4.8rem 0 12.8rem 0; */
-  /* Same as */
   padding: 4.8rem 0 12.8rem;
 }
 
