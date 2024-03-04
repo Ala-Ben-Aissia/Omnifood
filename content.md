@@ -107,22 +107,27 @@ I got Omnifood for the whole family, and it frees up so much time! Plus, everyth
 
 ### Contact information
 
+1. LOGO + SOCIAL PROFILES:
+Social profiles: instagram, facebook, twitter [links to them not available yet]
+
+2. CONTACT US:
 Address: 623 Harrison St., 2nd Floor, San Francisco, CA 94107
 Phone: 415-201-6370
 Email: <hello@omnifood.com>
 
-Social profiles: instagram, facebook, twitter [links to them not available yet]
-
 ### Additional links [links not available yet]
 
+3. ACCOUNT:
 Create account
 Sign in
 iOS app
 Android app
+4. COMPANY:
 About Omnifood
 For Business
 Cooking partners
 Careers
+5. RESOURCES:
 Recipe directory
 Help center
 Privacy & terms

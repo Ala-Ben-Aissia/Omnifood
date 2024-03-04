@@ -21,8 +21,10 @@
     - Tints: #fdf2e9 #fae5d3 #eb984e
     - Shades: #cf711f
     - Accents:
-    - Greys: #555, #333
+    - Greys: #333, #555, #777, #aaa, #eee
       #6f6f6f lightest grey on a #fdf2e9 background
+      to achieve a good contrast
+      #767676 lightest grey on a #fff background
       to achieve a good contrast
 
   * IMAGES:
@@ -102,6 +104,10 @@ body {
 
 .grid-4-cols {
   grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-5-cols {
+  grid-template-columns: repeat(5, 1fr);
 }
 
 .grid-center--v {
