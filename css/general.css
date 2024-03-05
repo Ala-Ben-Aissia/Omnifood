@@ -14,6 +14,7 @@
       small 1.05
       medium: 1.2
       paragraph default 1.6
+      large: 1.8
 
   * COLORS
     - https://maketintsandshades.com
@@ -54,6 +55,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -191,6 +193,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
+  line-height: 1.2;
 }
 
 .list-item {
