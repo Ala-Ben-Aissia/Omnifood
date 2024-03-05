@@ -1,0 +1,24 @@
+/* rem and em do not depend on html font-size in media queries, 1rem = 1rem = 16px (default browser's font-size)
+*/
+
+/* 
+ ? ****************
+  ^ BELOW 1344px (small monitors < 1344px)
+ ? ****************
+*/
+
+/* 1350 / 16 = 84.375 ≃ 84 */
+/* 1344 / 16 = 84 */
+
+/* First breakpoint: 1344px */
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
