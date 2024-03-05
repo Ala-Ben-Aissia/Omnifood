@@ -56,6 +56,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -64,6 +65,8 @@ body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   color: #555;
+  overflow-x: hidden;
+  /* This works only if there is nothing absolutely positioned in relation to the body */
 }
 
 /* 
@@ -224,4 +227,8 @@ strong {
 
 .center-text {
   text-align: center;
+}
+
+.hidden {
+  display: none;
 }

@@ -130,6 +130,63 @@
   .btn--form {
     margin-top: 2.4rem;
   }
+
+  .btn-mobile--nav {
+    display: block;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* or 100vw */
+    height: 100vh;
+    transform: translateX(100%);
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-out;
+    /* 
+    ease-in: slow in the beginning fast in the end ≠ ease-out
+    */
+    /* display: none; */
+    /* display: none => no transitions 😕 */
+    /* By default:
+    /*~ mobile-nav--open is absent */
+    /* *1. hide element visually */
+    opacity: 0;
+    /* *2. undetectable by mouse or keyboard */
+    pointer-events: none;
+    /* *3. hide element from screen readers */
+    visibility: hidden;
+  }
+
+  /*~ mobile-nav--open is present */
+  .mobile-nav--open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .mobile-nav--open .icon-mobile--nav[name="close-outline"] {
+    display: block;
+  }
+
+  .mobile-nav--open .icon-mobile--nav[name="menu-outline"] {
+    display: none; /* no animation needed */
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
 }
 
 /* 780px */
@@ -163,79 +220,3 @@
     - SPACING (px)
       2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
-
-/* 
- ? ****************
-  ^ BELOW 960px (tablets < 961px)
- ? ****************
-*/
-
-/*
-
-@media (max-width: 60em) {
-    html {
-      /* 8px / 16px */
-/* font-size: 50%;
-    } */
-/*
-  
-    .hero {
-      grid-template-columns: auto;
-      padding: 0 12.8rem;
-      gap: 6.4rem;
-    }
-  
-    .hero-text-box,
-    .hero-img-box {
-      text-align: center;
-    }
-  
-    .hero-img {
-      width: 60%;
-    }
-  
-    .delivered-meals {
-      justify-content: center;
-      margin-top: 3.2rem;
-    }
-  
-    .logos img {
-      height: 2.4rem;
-    }
-  
-    .step-number {
-      font-size: 7.4rem;
-    }
-  
-    .meal-content {
-      padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-    }
-  
-    .section-testimonials {
-      grid-template-columns: 1fr;
-    }
-  
-    .gallery {
-      grid-template-columns: repeat(6, 1fr);
-    }
-  
-    .cta {
-      grid-template-columns: 3fr 2fr;
-    }
-  
-    .cta-form {
-      grid-template-columns: 1fr;
-    }
-  
-    .btn--form {
-      margin-top: 2.4rem;
-    }
-  }
-  
-  /* 780px */
-
-/* @media (max-width: 49em) {
-    html {
-      font-size: 31%;
-    } 
-  }*/
