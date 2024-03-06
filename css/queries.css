@@ -189,13 +189,159 @@
   }
 }
 
-/* 780px */
+/* 
+ ? ****************
+  ^ BELOW 784px (Smaller tablets < 785px)
+ ? ****************
+*/
 
-/* @media (max-width: 49em) {
-    html {
-      font-size: 31%;
-    } 
-  }*/
+@media (max-width: 49em) {
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diet-list {
+    grid-column: 1 / -1;
+    justify-self: center;
+  }
+
+  .btn:link,
+  .btn:visited {
+    font-size: 1.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .heading-secondary {
+    font-size: 3rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .heading-tertiary {
+    font-size: 2rem;
+  }
+
+  .logos img {
+    height: 2rem;
+  }
+
+  .grid--footer {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .nav-col {
+    grid-row: 1;
+  }
+
+  .nav-col {
+    grid-column: span 2;
+  }
+
+  .contact-col,
+  .logo-col {
+    grid-column: span 3;
+  }
+}
+
+/* 
+ ? ****************
+  ^ BELOW 576px (Phones < 577px)
+ ? ****************
+*/
+
+@media (max-width: 36rem) {
+  .grid {
+    row-gap: 4.8rem;
+  }
+
+  .grid-2-cols,
+  .grid-3-cols,
+  .grid-4-cols,
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .section-how {
+    padding: 4.8rem 0;
+  }
+
+  .section-hero {
+    padding: 2.4rem 0 6.4rem 0;
+  }
+
+  .hero {
+    padding: 0 4.8rem;
+  }
+
+  .btn:link,
+  .btn:visited {
+    padding: 1.6rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pricing-plan,
+  .meal {
+    width: 75%;
+    justify-self: center;
+  }
+
+  .step-img-box:nth-child(3) {
+    grid-row: 4 / 5;
+  }
+
+  .testimonial-container {
+    padding: 4.8rem 3.2rem;
+  }
+
+  .section-meals {
+    padding: 4.8rem 0;
+  }
+
+  .logos img {
+    height: 1.8rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    grid-row: 1;
+  }
+
+  .cta-text-box .heading-secondary {
+    margin-bottom: 2.4rem;
+  }
+
+  .cta-text {
+    margin-bottom: 2.4rem;
+    line-height: 1.4;
+  }
+
+  .footer-link:link,
+  .footer-link:visited {
+    font-size: 1.4rem;
+  }
+
+  .footer-heading {
+    font-size: 1.6rem;
+  }
+
+  .footer-logo .logo {
+    height: 1.8rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+}
 
 /* 
   * TYPOGRAPHY SYSTEM
