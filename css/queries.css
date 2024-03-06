@@ -133,6 +133,9 @@
 
   .btn-mobile--nav {
     display: block;
+    z-index: 999;
+    /* to make sure the button is always on top of menu layout */
+    /* the focus state is always active for this btn */
   }
 
   .main-nav {
@@ -170,8 +173,7 @@
     transform: translateX(0);
   }
 
-  .mobile-nav--open
-    .icon-mobile--nav[name="close-outline"] {
+  .mobile-nav--open .icon-mobile--nav[name="close-outline"] {
     display: block;
   }
 

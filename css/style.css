@@ -53,7 +53,7 @@
   background-color: #cf711f;
 }
 
-/* ^ MOBILE */
+/* ^ MOBILE NAVIGATION */
 .btn-mobile--nav {
   border: none;
   background: none;
@@ -69,6 +69,33 @@
 
 .icon-mobile--nav[name="close-outline"] {
   display: none;
+}
+
+/* 
+ ? ****************
+  ^ STICKY NAVIGATION
+ ? ****************
+*/
+
+/*? if sticky exists then: */
+.sticky .header {
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.95);
+  width: 100%;
+  height: 8rem;
+  /* padding-top: 0;
+  padding-bottom: 0; */
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.03);
+}
+
+/*? if sticky exists then: */
+/* to replace the original nav surface when sticky is active */
+.sticky .section-hero {
+  margin-top: 9.6rem;
+  /* header has height: 9.6rem originally */
 }
 
 /* 
