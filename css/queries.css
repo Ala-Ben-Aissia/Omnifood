@@ -170,7 +170,8 @@
     transform: translateX(0);
   }
 
-  .mobile-nav--open .icon-mobile--nav[name="close-outline"] {
+  .mobile-nav--open
+    .icon-mobile--nav[name="close-outline"] {
     display: block;
   }
 
@@ -342,6 +343,8 @@
     height: 1.2rem;
   }
 }
+
+/* TODO: Some headings and whiteSpaces are missing minor adjustments */
 
 /* 
   * TYPOGRAPHY SYSTEM
