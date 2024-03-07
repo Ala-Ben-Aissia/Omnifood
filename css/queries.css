@@ -145,7 +145,10 @@
     width: 100%; /* or 100vw */
     height: 100vh;
     transform: translateX(100%);
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    /*? https://caniuse.com/?search=backdrop%20filter */
+    -webkit-backdrop-filter: blur(10px);
     display: flex;
     align-items: center;
     justify-content: center;
